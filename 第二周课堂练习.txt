@@ -1,0 +1,78 @@
+1、'hello,world'.replace('l','*')
+
+
+2、1.  ('Good'.lower()+'!')*3
+       2.  (('Good'+'!')*3).lower()
+
+
+3、'Fh1qoWe92QbvC'.swapcase()
+
+
+4、str = "Fh1qoWe92QbvC"
+list=[]
+if str.isdigit():
+    print(str)
+else:
+    for i in str:
+        if i>="0" and i<="9":
+            list.append(i)
+    print(list)
+
+5、lst=[2,0,3,6,9]
+sorted(lst)
+
+
+6、 l=[2,3,1,2,4,3]
+del l[3]
+del l[4]
+print (l)
+
+7、
+a='aasdebbcaa'
+d={}
+for c in a:
+    if (c in d):
+        d[c]=(d[c]+1)
+    else:
+        d[c]=1
+print (d)
+
+8、
+def running():
+     num = 0
+     letter= 0
+     space = 0
+     other = 0
+     str='p jm wj z,/.94631'
+     for i in str:
+         if i.isdigit():
+             num+=1
+         if i.isalpha():
+             letter+=1
+         if i.isspace():
+             space+=1
+         else:
+             other+=1
+     print (num,space,letter,other)
+
+running()
+
+
+9、
+a = " a b c "
+"".join(a.split())
+
+
+10、
+import random
+number = random.randint(1,100)
+number2 = 0
+while number2 != number:
+    number3 = input('请输入数字：')
+    number2 = int(number3)
+    if number2 > number:
+        print('您输入的数字大了！')
+    if number2 < number:
+        print('您输入的数字小了！')
+    if number2 == number:
+        print('恭喜，您猜对了！')
