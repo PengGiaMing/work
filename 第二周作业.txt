@@ -1,0 +1,55 @@
+1.因为父子合并的意义在于 在页面中嵌套或直接放入任何的裸<div>都不会影响原本的布局。
+2.:before 表示该标记前面的样式，:after 代表设置后面的样式。
+	<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		.line:before,.line:after{
+        	content: '';
+        	display:inline-block;
+       	 	width: 20%;
+        	margin: 5px 5%;
+        	border-bottom: 1px solid #cacaca;
+    }
+			</style>
+		<meta charset="{CHARSET}">
+		<title></title>
+	</head>
+	<body>
+		<div>
+		<span class="line">作业</span>
+		</div>
+	</body>
+</html>
+
+
+3.
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		.big{
+			height:0px; 
+			width:0px;top:50%; 
+			left:50%;
+			position:absolute;
+			} 
+		.center{
+		background:blue;
+		width:400px;
+		height:400px;
+		position:absolute; 
+		margin:-200px;
+		text-align:center;
+	} 
+			</style>
+		<meta charset="{CHARSET}">
+		<title></title>
+	</head>
+	<body>
+		<div class="big"> 
+		<div class="center">div</div> 
+		</div> 
+	</body>
+</html>
