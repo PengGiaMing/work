@@ -1,124 +1,74 @@
-1.tupleÊÇÒ»¸ö²»¿É±äµÄÐòÁÐ, ²»ÄÜ¶ÔËüµÄÔªËØ¸³Öµ
-£¨ÊýÖµÐÍnumber¡¢×Ö·û´®string¾ùÎª²»¿É±äµÄ¶ÔÏó£¬¶ø×Öµä¿ÉÒÔÐÞ¸Ä³É¹¦£©
+1.tupleæ˜¯ä¸€ä¸ªä¸å¯å˜çš„åºåˆ—, ä¸èƒ½å¯¹å®ƒçš„å…ƒç´ èµ‹å€¼
+ï¼ˆæ•°å€¼åž‹numberã€å­—ç¬¦ä¸²stringå‡ä¸ºä¸å¯å˜çš„å¯¹è±¡ï¼Œè€Œå­—å…¸å¯ä»¥ä¿®æ”¹æˆåŠŸï¼‰
 
-2.¶Ô×ÖµäµÄ¸³Öµ³É¹¦£¬µ«ÊÇºóÀ´·¢ÉúµÄÔª×é¸³ÖµÊ§°ÜÔì³ÉµÄ
-£¨ÊÇÏÈ¶Ô×Öµä½øÐÐÁËiadd²Ù×÷²¢ÇÒ³É¹¦£¬¶øÖ®ºóµÄtuple¸³ÖµÊ§°Ü±¨´í£©
+2.å¯¹å­—å…¸çš„èµ‹å€¼æˆåŠŸï¼Œä½†æ˜¯åŽæ¥å‘ç”Ÿçš„å…ƒç»„èµ‹å€¼å¤±è´¥é€ æˆçš„
+ï¼ˆæ˜¯å…ˆå¯¹å­—å…¸è¿›è¡Œäº†iaddæ“ä½œå¹¶ä¸”æˆåŠŸï¼Œè€Œä¹‹åŽçš„tupleèµ‹å€¼å¤±è´¥æŠ¥é”™ï¼‰
 
-3.¶ÔÔ­ÓÐµÄtupleÖÐµÄ×ÖµäÖ±½Ó¸³Öµ²»»á³É¹¦
-£¨±äÁ¿¸³Öµ²ÉÓÃ¶ÔÏóÒýÓÃµÄ·½Ê½£¬´«µÝµÄÊÇÒ»¸ö¶ÔÏóµÄÄÚ´æµØÖ·---ÏñÒ»¸öÖ¸Õë£©
+3.å¯¹åŽŸæœ‰çš„tupleä¸­çš„å­—å…¸ç›´æŽ¥èµ‹å€¼ä¸ä¼šæˆåŠŸ
+ï¼ˆå˜é‡èµ‹å€¼é‡‡ç”¨å¯¹è±¡å¼•ç”¨çš„æ–¹å¼ï¼Œä¼ é€’çš„æ˜¯ä¸€ä¸ªå¯¹è±¡çš„å†…å­˜åœ°å€---åƒä¸€ä¸ªæŒ‡é’ˆï¼‰
 
-4.¼ìË÷Ãû³Æ´æ´¢ÔÚ×Ö·û´®ÖÐµÄ×Ö¶Î£¬ÇëÊ¹ÓÃÒÔÏÂgetattr() º¯Êý£º
+4.æ£€ç´¢åç§°å­˜å‚¨åœ¨å­—ç¬¦ä¸²ä¸­çš„å­—æ®µï¼Œè¯·ä½¿ç”¨ä»¥ä¸‹getattr() å‡½æ•°ï¼š
 p = 'xxxxxxxxx'
 getattr(p,'x')
 
-5.½«×Öµä×ª»»ÎªÃüÃûÔª×é:
+5.å°†å­—å…¸è½¬æ¢ä¸ºå‘½åå…ƒç»„:
 d = {'x': 11, 'y': 22}
 Point(**d)
 
-6.¿ØÖÆÁ÷Óï¾ä£º
-    if:¿ÉÒÔÓÐÁã¸ö»ò¶à¸öelifÁã¼þ£¬elseÁã¼þÊÇ¿ÉÑ¡µÄ
-    for:µü´úÈÎºÎÐòÁÐµÄÏîÄ¿£¨ÁÐ±í»òstring£©£¬°´ÕÕËüÃÇ³öÏÖÔÚÐòÁÐÖÐµÄË³Ðò
-    range():µü´úÒ»ÏµÁÐÊý×Ö
-	(ËüÊÇÒ»¸ö¶ÔÏó£¬µ±µü´úËüÊ±£¬Ëü·µ»ØËùÐèÐòÁÐµÄÁ¬ÐøÏî£¬µ«Ëü²»ÊÇÁÐ±í)
+6.æŽ§åˆ¶æµè¯­å¥ï¼š
+    if:å¯ä»¥æœ‰é›¶ä¸ªæˆ–å¤šä¸ªelifé›¶ä»¶ï¼Œelseé›¶ä»¶æ˜¯å¯é€‰çš„
+    for:è¿­ä»£ä»»ä½•åºåˆ—çš„é¡¹ç›®ï¼ˆåˆ—è¡¨æˆ–stringï¼‰ï¼ŒæŒ‰ç…§å®ƒä»¬å‡ºçŽ°åœ¨åºåˆ—ä¸­çš„é¡ºåº
+    range():è¿­ä»£ä¸€ç³»åˆ—æ•°å­—
+	(å®ƒæ˜¯ä¸€ä¸ªå¯¹è±¡ï¼Œå½“è¿­ä»£å®ƒæ—¶ï¼Œå®ƒè¿”å›žæ‰€éœ€åºåˆ—çš„è¿žç»­é¡¹ï¼Œä½†å®ƒä¸æ˜¯åˆ—è¡¨)
 
-7.Ñ­»·Óï¾ä¿ÉÄÜÓÐÒ»¸öelse×Ó¾ä£¬ 
-  µ±Ñ­»·Í¨¹ýÁÐ±íºÄ¾¡»òÌõ¼þ±äÎªfalseÊ±ÖÕÖ¹£¬Êä³öelse×Ó¾äÖÐµÄÓï¾ä£¬
-  µ«ÊÇµ±Ñ­»·±»breakÓï¾äÖÕÖ¹Ê±²»Ö´ÐÐelse×Ó¾ä
+7.å¾ªçŽ¯è¯­å¥å¯èƒ½æœ‰ä¸€ä¸ªelseå­å¥ï¼Œ 
+  å½“å¾ªçŽ¯é€šè¿‡åˆ—è¡¨è€—å°½æˆ–æ¡ä»¶å˜ä¸ºfalseæ—¶ç»ˆæ­¢ï¼Œè¾“å‡ºelseå­å¥ä¸­çš„è¯­å¥ï¼Œ
+  ä½†æ˜¯å½“å¾ªçŽ¯è¢«breakè¯­å¥ç»ˆæ­¢æ—¶ä¸æ‰§è¡Œelseå­å¥
   
-  continue---¼ÌÐøÑ­»·µÄÏÂÒ»´Îµü´ú
+  continue---ç»§ç»­å¾ªçŽ¯çš„ä¸‹ä¸€æ¬¡è¿­ä»£
 
-8.passÓï¾ä---µ±Óï·¨ÐèÒªÓï¾äµ«³ÌÐò²»ÐèÒª²Ù×÷Ê±£¬¿ÉÒÔÊ¹ÓÃËü
+8.passè¯­å¥---å½“è¯­æ³•éœ€è¦è¯­å¥ä½†ç¨‹åºä¸éœ€è¦æ“ä½œæ—¶ï¼Œå¯ä»¥ä½¿ç”¨å®ƒ
 
-9.¹Ø¼ü×ÖdefÒýÈëÁËÒ»¸öº¯Êý¶¨Òå¡£Ëü±ØÐëºó¸úº¯ÊýÃû³ÆºÍ´øÀ¨ºÅµÄÐÎÊ½²ÎÊýÁÐ±í¡£¹¹³Éº¯ÊýÌåµÄÓï¾ä´ÓÏÂÒ»ÐÐ¿ªÊ¼£¬²¢ÇÒ±ØÐëËõ½ø
+9.å…³é”®å­—defå¼•å…¥äº†ä¸€ä¸ªå‡½æ•°å®šä¹‰ã€‚å®ƒå¿…é¡»åŽè·Ÿå‡½æ•°åç§°å’Œå¸¦æ‹¬å·çš„å½¢å¼å‚æ•°åˆ—è¡¨ã€‚æž„æˆå‡½æ•°ä½“çš„è¯­å¥ä»Žä¸‹ä¸€è¡Œå¼€å§‹ï¼Œå¹¶ä¸”å¿…é¡»ç¼©è¿›
 
-  returnÓï¾ä·µ»ØÒ»¸öº¯ÊýµÄÖµ¡£ returnÃ»ÓÐ±í´ïÊ½²ÎÊý·µ»ØNone¡£´Óº¯ÊýµÄÄ©Î²µôÂäÒ²»á·µ»ØNone¡£
+  returnè¯­å¥è¿”å›žä¸€ä¸ªå‡½æ•°çš„å€¼ã€‚ returnæ²¡æœ‰è¡¨è¾¾å¼å‚æ•°è¿”å›žNoneã€‚ä»Žå‡½æ•°çš„æœ«å°¾æŽ‰è½ä¹Ÿä¼šè¿”å›žNoneã€‚
 
-10. Ä¬ÈÏÖµ½öÆÀ¹ÀÒ»´Î¡£µ±Ä¬ÈÏÖµÊÇ¿É±ä¶ÔÏó£¨ÁÐ±í¡¢×ÖµäµÈ´ó¶àÊýÊµÀý£©Ê±£¬Õâ»á²úÉú²îÒì¡£
+10. é»˜è®¤å€¼ä»…è¯„ä¼°ä¸€æ¬¡ã€‚å½“é»˜è®¤å€¼æ˜¯å¯å˜å¯¹è±¡ï¼ˆåˆ—è¡¨ã€å­—å…¸ç­‰å¤§å¤šæ•°å®žä¾‹ï¼‰æ—¶ï¼Œè¿™ä¼šäº§ç”Ÿå·®å¼‚ã€‚
 
-11.ÔÚº¯Êýµ÷ÓÃÖÐ£¬¹Ø¼ü×Ö²ÎÊý±ØÐë×ñÑ­Î»ÖÃ²ÎÊý¡£´«µÝµÄËùÓÐ¹Ø¼ü×Ö²ÎÊý±ØÐëÓëº¯Êý½ÓÊÜµÄ²ÎÊýÖ®Ò»Æ¥Åä£¬²¢ÇÒËüÃÇµÄË³Ðò²¢²»ÖØÒª¡£
+11.åœ¨å‡½æ•°è°ƒç”¨ä¸­ï¼Œå…³é”®å­—å‚æ•°å¿…é¡»éµå¾ªä½ç½®å‚æ•°ã€‚ä¼ é€’çš„æ‰€æœ‰å…³é”®å­—å‚æ•°å¿…é¡»ä¸Žå‡½æ•°æŽ¥å—çš„å‚æ•°ä¹‹ä¸€åŒ¹é…ï¼Œå¹¶ä¸”å®ƒä»¬çš„é¡ºåºå¹¶ä¸é‡è¦ã€‚
 
-12.µ±**name´æÔÚ±íµ¥µÄ×îÖÕÐÎÊ½²ÎÊýÊ±£¬Ëü½ÓÊÕ°üº¬³ýÁËÓëÐÎÊ½²ÎÊýÏà¶ÔÓ¦µÄËùÓÐ¹Ø¼ü×Ö²ÎÊýµÄ×Öµä
+12.å½“**nameå­˜åœ¨è¡¨å•çš„æœ€ç»ˆå½¢å¼å‚æ•°æ—¶ï¼Œå®ƒæŽ¥æ”¶åŒ…å«é™¤äº†ä¸Žå½¢å¼å‚æ•°ç›¸å¯¹åº”çš„æ‰€æœ‰å…³é”®å­—å‚æ•°çš„å­—å…¸
 
-   *name½ÓÊÕ°üº¬³¬³öÐÎÊ½²ÎÊýÁÐ±íµÄÎ»ÖÃ²ÎÊýµÄÔª×é¡££¨*name±ØÐëÔÚÖ®Ç°·¢Éú**name£©
+   *nameæŽ¥æ”¶åŒ…å«è¶…å‡ºå½¢å¼å‚æ•°åˆ—è¡¨çš„ä½ç½®å‚æ•°çš„å…ƒç»„ã€‚ï¼ˆ*nameå¿…é¡»åœ¨ä¹‹å‰å‘ç”Ÿ**nameï¼‰
 
-   ´òÓ¡¹Ø¼ü×Ö²ÎÊýµÄË³Ðò±£Ö¤Óëº¯Êýµ÷ÓÃÖÐÌá¹©ËüÃÇµÄË³ÐòÏàÆ¥Åä¡£
+   æ‰“å°å…³é”®å­—å‚æ•°çš„é¡ºåºä¿è¯ä¸Žå‡½æ•°è°ƒç”¨ä¸­æä¾›å®ƒä»¬çš„é¡ºåºç›¸åŒ¹é…ã€‚
 
-13.×¢ÊÍ__annotations__×÷Îª×Öµä´æ´¢ÔÚº¯ÊýµÄÊôÐÔÖÐ£¬¶Ôº¯ÊýµÄÈÎºÎÆäËû²¿·ÖÃ»ÓÐÓ°Ïì¡£
+13.æ³¨é‡Š__annotations__ä½œä¸ºå­—å…¸å­˜å‚¨åœ¨å‡½æ•°çš„å±žæ€§ä¸­ï¼Œå¯¹å‡½æ•°çš„ä»»ä½•å…¶ä»–éƒ¨åˆ†æ²¡æœ‰å½±å“ã€‚
   
-   ²ÎÊý×¢ÊÍÓÉ²ÎÊýÃû³ÆºóÃæµÄÃ°ºÅ¶¨Òå£¬ºó¸úÒ»¸ö±í´ïÊ½£¬ÓÃÓÚÆÀ¹À×¢ÊÍµÄÖµ¡£
+   å‚æ•°æ³¨é‡Šç”±å‚æ•°åç§°åŽé¢çš„å†’å·å®šä¹‰ï¼ŒåŽè·Ÿä¸€ä¸ªè¡¨è¾¾å¼ï¼Œç”¨äºŽè¯„ä¼°æ³¨é‡Šçš„å€¼ã€‚
 
-   ·µ»Ø×¢ÊÍÓÉ->²ÎÊýÁÐ±íºÍ±íÊ¾defÓï¾ä½áÎ²µÄÃ°ºÅÖ®¼äµÄÎÄ×Ö£¬ºó¸ú±í´ïÊ½¶¨Òå¡£
+   è¿”å›žæ³¨é‡Šç”±->å‚æ•°åˆ—è¡¨å’Œè¡¨ç¤ºdefè¯­å¥ç»“å°¾çš„å†’å·ä¹‹é—´çš„æ–‡å­—ï¼ŒåŽè·Ÿè¡¨è¾¾å¼å®šä¹‰ã€‚
 
-14.operatorÄ£¿éµ¼³öÒ»×éÓëPythonµÄÄÚ²¿ÔËËã·ûÏà¶ÔÓ¦µÄ¸ßÐ§º¯Êý
+14.operatoræ¨¡å—å¯¼å‡ºä¸€ç»„ä¸ŽPythonçš„å†…éƒ¨è¿ç®—ç¬¦ç›¸å¯¹åº”çš„é«˜æ•ˆå‡½æ•°
 
-   ±È½ÏÔËËã·û:
-	operator.lt£¨a£¬b£© le£¨a£¬b£©eq£¨a£¬b£©ne£¨a£¬b£©ge£¨a£¬b£©gt£¨a£¬b)
-	Ïàµ±ÓÚ¡¢µÈÍ¬ÓÚ¡¢Ïàµ±ÓÚ¡¢µÈÍ¬ÓÚ¡¢Ïàµ±ÓÚ¡¢Ïàµ±ÓÚ
-   Âß¼­ÔËËã£º
-	operator.not_£¨obj£© operator.truth£¨obj£© operator.is_£¨a£¬b£©---¼ìÑé¶ÔÏóÊÇ·ñÏàµÈ
+   æ¯”è¾ƒè¿ç®—ç¬¦:
+	operator.ltï¼ˆaï¼Œbï¼‰ leï¼ˆaï¼Œbï¼‰eqï¼ˆaï¼Œbï¼‰neï¼ˆaï¼Œbï¼‰geï¼ˆaï¼Œbï¼‰gtï¼ˆaï¼Œb)
+	ç›¸å½“äºŽã€ç­‰åŒäºŽã€ç›¸å½“äºŽã€ç­‰åŒäºŽã€ç›¸å½“äºŽã€ç›¸å½“äºŽ
+   é€»è¾‘è¿ç®—ï¼š
+	operator.not_ï¼ˆobjï¼‰ operator.truthï¼ˆobjï¼‰ operator.is_ï¼ˆaï¼Œbï¼‰---æ£€éªŒå¯¹è±¡æ˜¯å¦ç›¸ç­‰
 
-	operator.abs£¨obj£©---¾ø¶ÔÖµ  operator.add£¨a£¬b £© operator.and_£¨a,b£©
+	operator.absï¼ˆobjï¼‰---ç»å¯¹å€¼  operator.addï¼ˆaï¼Œb ï¼‰ operator.and_ï¼ˆa,bï¼‰
 
-	operator.floordiv£¨a£¬b £©---Ïàµ±ÓÚa // b  operator.index£¨a£©---×ª»»ÎªÕûÊý
+	operator.floordivï¼ˆaï¼Œb ï¼‰---ç›¸å½“äºŽa // b  operator.indexï¼ˆaï¼‰---è½¬æ¢ä¸ºæ•´æ•°
 
-	operator.inv£¨obj£©---¶Ôobj¶ÔÏó°´Î»È¡·´µÄÖµ  operator.lshift£¨a£¬b£©---×óÒÆb
+	operator.invï¼ˆobjï¼‰---å¯¹objå¯¹è±¡æŒ‰ä½å–åçš„å€¼  operator.lshiftï¼ˆaï¼Œbï¼‰---å·¦ç§»b
 
-	operator.mod£¨a£¬b£©---Ïàµ±ÓÚa%b   operator.mul£¨a£¬b£©·µ»Ø a*b
+	operator.modï¼ˆaï¼Œbï¼‰---ç›¸å½“äºŽa%b   operator.mulï¼ˆaï¼Œbï¼‰è¿”å›ž a*b
 
-	operator.or_£¨a£¬b)---°´Î»»òaºÍb   operator.rshift£¨a£¬b£©---ÓÒÒÆb
+	operator.or_ï¼ˆaï¼Œb)---æŒ‰ä½æˆ–aå’Œb   operator.rshiftï¼ˆaï¼Œbï¼‰---å³ç§»b
 
-	operator.neg(obj)--- obj¶ÔÏóµÄÏà·´Êý(-obj)   operator.or_(a, b)---·µ»Ø a | b
+	operator.neg(obj)--- objå¯¹è±¡çš„ç›¸åæ•°(-obj)   operator.or_(a, b)---è¿”å›ž a | b
 	
-	operator.pow(a, b)---·µ»Ø a** b£¨³Ë·½£© .............
+	operator.pow(a, b)---è¿”å›ž a** bï¼ˆä¹˜æ–¹ï¼‰ .............
 
-15.PEP 3101 - ¸ß¼¶×Ö·û´®¸ñÊ½
-
-   'format'£¬Ëü½ÓÊÜÈÎÒâÊýÁ¿µÄÎ»ÖÃºÍ¹Ø¼ü×Ö²ÎÊý
-
-   '{}'±ê¼Ç²»ÊÇ´Ó¸ñÊ½×Ö·û´®Ö±½Ó´«Êäµ½Êä³ö£¬¶øÊÇÓÃÓÚ¶¨Òå¡°Ìæ»»×Ö¶Î¡±£¬ËüÃÇÏò¸ñÊ½ÒýÇæÃèÊöÓ¦¸ÃÔÚÊä³ö×Ö·û´®ÖÐ·ÅÖÃÊ²Ã´À´´úÌæ±ê¼Ç
-
-   ¸ñÊ½ËµÃ÷·û---¿ÉÓÃÓÚµ÷Õû¸Ã×Ö¶ÎµÄ¸ñÊ½
-	
-   ¸ñÊ½ËµÃ÷·û±¾Éí¿ÉÒÔ°üº¬Ìæ»»×Ö¶Î(¡°{0£º{1}}¡±¡£¸ñÊ½£¨a£¬b£©) 
-      ×¢£ºÍ¨³£»á±»×ªÒåµÄ½áÎ²´¦µÄ¼Ó±¶'}'²»»á±»×ªÒåÔ­ÒòÊÇÒòÎª×ªÒåµÄ'{{'ºÍ'}}'Óï·¨½öÔÚ¸ñÊ½×Ö¶ÎÍâÊ¹ÓÃÊ±²ÅÓ¦ÓÃ
-
-   ±ê×¼¸ñÊ½ËµÃ÷·û:
-
-   ¶ÔÆë±êÖ¾---  '<' - Ç¿ÖÆ×Ö¶ÎÔÚ¿ÉÓÃ·¶Î§ÄÚ×ó¶ÔÆë  '>' - Ç¿ÖÆ×Ö¶ÎÔÚ×Ö¶ÎÄÚÓÒ¶ÔÆë  '^' - Ç¿ÖÆ×Ö¶ÎÔÚ¿ÉÓÃ·¶Î§ÄÚ¾ÓÖÐ  
-
-   ÕûÊý±íÊ¾ÀàÐÍ----  'b' - ¶þ½øÖÆ  'c'½«ÕûÊý×ª»»ÎªÏàÓ¦µÄ´òÓ¡Ç°µÄUnicode×Ö·û  'd' - Ê®½øÖÆÕûÊý 'o' - °Ë½øÖÆ¸ñÊ½ 
-		    'x'¡¢'X' - Ê®Áù½øÖÆ¸ñÊ½ 
-
-   ¸¡µã±íÊ¾ÀàÐÍ---  'e' - Ö¸Êý±íÊ¾·¨ 'E'(×ª»»Îª´óÐ´)  'f' - ¸¡µã 'F'£¨×ª»»Îª´óÐ´£© 'g' - Ò»°ã¸ñÊ½£¬Õâ»á½«Êý×Ö´òÓ¡Îª¸¡µã
-		    ''£¨ÎÞ£© - ÀàËÆÓÚ'g'£¬µ«Ëü´òÓ¡ÖÁÉÙÒ»¸öÐ¡ÊýµãºóµÄÊý×Ö
-
-   'format'ÊÇÖ÷ÒªµÄAPI·½·¨¡£ËüÐèÒªÒ»¸ö¸ñÊ½Ä£°å£¬ÒÔ¼°Ò»×éÈÎÒâµÄÎ»ÖÃºÍ¹Ø¼ü×Ö²ÎÊý¡£'format'Ö»ÊÇÒ»¸öµ÷ÓÃ'vformat'µÄ°ü×°Æ÷¡£
-
-   'vformat'ÊÇÖ´ÐÐ¸ñÊ½»¯Êµ¼Ê¹¤×÷µÄº¯Êý¡£
-
-    Formatter¶¨ÒåÁËÒÔÏÂ¿É¸²¸ÇµÄ·½·¨£º
-
-    -  get_value£¨key£¬args£¬kwargs£©
-    -  check_unused_args£¨used_args£¬args£¬kwargs£©
-    -  format_field£¨value£¬format_spec£©
-
-   'get_value'ÓÃÓÚ¼ìË÷¸ø¶¨µÄ×Ö¶ÎÖµ¡£'key'²ÎÊý¿ÉÒÔÊÇÕûÊý»ò×Ö·û´®¡£
-   Èç¹ûËüÊÇÒ»¸öÕûÊý£¬Ëü±íÊ¾'args'ÖÐÎ»ÖÃ²ÎÊýµÄË÷Òý; Èç¹ûËüÊÇÒ»¸ö×Ö·û´®£¬ÄÇÃ´Ëü´ú±í'kwargs'ÖÐµÄÃüÃû²ÎÊý¡£
-
-   'args'²ÎÊýÉèÖÃÎª'vformat'µÄÎ»ÖÃ²ÎÊýÁÐ±í£¬'kwargs'²ÎÊýÉèÖÃÎªÎ»ÖÃ²ÎÊý×Öµä¡£
-
-   ¶ÔÓÚ¸´ºÏ×Ö¶ÎÃû³Æ£¬½öÎª×Ö¶ÎÃû³ÆµÄµÚÒ»¸ö×é¼þµ÷ÓÃÕâÐ©º¯Êý; ºóÐø×é¼þÍ¨¹ý³£¹æÊôÐÔºÍË÷Òý²Ù×÷À´´¦Àí¡£
-
-   Òò´Ë£¬ÀýÈç£¬×Ö¶Î±í´ïÊ½¡°0.name¡±½«µ¼ÖÂÊ¹ÓÃ'key'²ÎÊýÎª0µ÷ÓÃ'get_value'¡£
-   ÔÚ'get_value'·µ»Øºó£¬Í¨¹ýµ÷ÓÃÄÚÖÃº¯ÊýÀ´²éÕÒ'name'ÊôÐÔgetattr'¹¦ÄÜ¡£
-
-   Èç¹ûË÷Òý»ò¹Ø¼ü×ÖÒýÓÃÁË²»´æÔÚµÄÏî£¬ ÔòÓ¦Òý·¢IndexError / KeyError¡£
-
-   Èç¹ûÐèÒª£¬'check_unused_args'ÓÃÓÚÊµÏÖ¶ÔÎ´Ê¹ÓÃ²ÎÊýµÄ¼ì²é¡£
- 
-  'format_field'Ö»ÊÇµ÷ÓÃÄÚÖÃµÄÈ«¾Ö'format'¡£Ìá¹©¸Ã·½·¨ÒÔ±ã×ÓÀà¿ÉÒÔ¸²¸ÇËü¡£
-
-   ¸ñÊ½»¯³ÌÐò´úÂë±¾ÉíÉú³ÉµÄÒì³£ÊôÓÚ¡°ValueError¡±ÀàÐÍ - ¸ñÊ½×Ö·û´®µÄÊµ¼Ê¡°Öµ¡±ÖÐ´æÔÚ´íÎó¡£
-     £¨ÕâÐ©ÄÚ²¿Éú³ÉµÄValueError Òì³£Ïà¹ØÁªµÄÎÄ±¾½«Ö¸Ê¾¸ñÊ½×Ö·û´®ÖÐÒì³£µÄÎ»ÖÃ£¬ÒÔ¼°Òì³£µÄÐÔÖÊ£©
-
-   ÓÃ»§´úÂëÉú³ÉµÄÒì³££¬¸ú×Ù¼ÇÂ¼ºÍÐéÄâ¿ò¼Ü½«Ìí¼Óµ½»ØËÝ¶ÑÕ»£¬ÒÔ°ïÖúÈ·¶¨·¢ÉúÒì³£µÄ×Ö·û´®ÖÐµÄÎ»ÖÃ   
+  
