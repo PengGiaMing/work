@@ -1,0 +1,92 @@
+1.
+
+def years():
+    name=input("name:")
+    year=int(input("age:"))
+    years=2018-year+100
+    print("%s到%d年100岁!" %(name,years))
+
+
+years()
+
+2.
+
+def judge():
+    number = int(input("输入一个数字:"))
+    if number % 2 == 0:
+        print("你输入的是偶数")
+    elif number % 2 == 1:
+        print("你输入的是奇数")
+    else:
+        print("你输入的是0")
+
+judge()
+
+3.
+一：
+def judgelist(list):
+    print(all(list))
+
+judgelist([0,''])
+二：
+def judgelist(list):
+    if list:
+        print('list is ture')
+    else:
+        print('list is false')
+
+judgelist([])
+三：
+def judgelist(list):
+    if 0 == len(list):
+        print('list is false')
+    else:
+        print('list is ture')
+
+judgelist([])
+
+4.
+
+一：
+lst = [1,2,3,4]
+def judgeint(lst):
+    lst2 = [x * 2 for x in lst]
+    print(lst2)
+
+judgeint(lst)
+二：
+lst = [1,2,3,4]
+def judgeint(lst):
+    lst2 = map(lambad x : ｘ * 2,lst)
+    print(list(lst2))
+
+judgeint(lst)
+
+
+5.
+lst = [1,2,3,4]
+def list2(lst):
+    print(reduce(lambda x,y : x + y,lst))
+
+list2(lst)
+
+6.
+lst = [1,2,3,4]
+def list3(lst):
+    lst2 = [x * x * x for x in lst]
+    print(lst2)
+
+list3(lst)
+
+7.
+lst1 = [1,2,4]
+lst2 = [3,6,8]
+def list4(lst1 , lst2):
+    print(list(zip(lst1,lst2)))
+
+list4(lst1,lst2)
+
+8.
+（1）
+max(2,9,4)
+    
