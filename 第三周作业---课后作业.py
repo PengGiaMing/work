@@ -1,6 +1,4 @@
-#1.±àÐ´Ò»¸öº¯ÊýÍê³ÉÃÜÂëÉú³ÉÆ÷µÄ¹¦ÄÜ£¬ÊäÈë²ÎÊýÓÐÃÜÂë³¤¶ÈºÍÃÜÂë×é³ÉµÄÄÚÈÝ£¬
-#  ÃÜÂë×é³ÉµÄÄÚÈÝ¿ÉÒÔÓÐ´óÐ´×ÖÄ¸£¨A-Z£©¡¢Ð¡Ð´×ÖÄ¸£¨a-z£©¡¢Êý×Ö£¨0-9£©¡¢ÌØÊâ·ûºÅ£¨~!@#$%^&*()£©£¬
-#  ·µ»ØÖµÎª°´ÕÕÓÃ»§ÒªÇóÉú³ÉµÄËæ»úÃÜÂë
+1.
 
 import random
 import string
@@ -8,19 +6,19 @@ import string
 user_list = []
 
 def judge1():
-    user_txt = input("ÇëÊäÈëÄãµÄÃÜÂëÄÚÈÝ:")
-    user_length = int(input("ÇëÊäÈëÄãµÄÃÜÂë³¤¶È:"))
+    user_txt = input("è¯·è¾“å…¥ä½ çš„å¯†ç å†…å®¹:")
+    user_length = int(input("è¯·è¾“å…¥ä½ çš„å¯†ç é•¿åº¦:"))
     for i in range(user_length):
         password = random.choice(user_txt)
         user_list.append(password)
         result = "".join(user_list)
-    print(f"ÏµÍ³ÎªÄãÉú³ÉµÄËæ»úÃÜÂëÎª:{result}")
+    print(f"ç³»ç»Ÿä¸ºä½ ç”Ÿæˆçš„éšæœºå¯†ç ä¸º:{result}")
     del result
     gc.collect()
 
 judge1()
 
-#2.ÊäÈë²ÎÊýÎªÒ»¸öÕûÊýÁÐ±íºÍÒ»¸öÕûÊý£¬ÅÐ¶Ï¸ÃÕûÊýÊÇ·ñ´æÔÚÓÚ¸ÃÁÐ±íÖÐ¡£Èç¹û´æÔÚ£¬ÊÇÔÚÁÐ±íµÄ×ó°ë±ß»¹ÊÇÓÒ°ë±ß
+2.
 
 def judge2(number,lst):
 	b=-1
@@ -28,23 +26,24 @@ def judge2(number,lst):
 	d=[]
 	for a in lst:
 		if a==number:
-			print("ÁÐ±íÀïÓÐÔªËØ%d" %(number))
+			print("åˆ—è¡¨é‡Œæœ‰å…ƒç´ %d" %(number))
 			c=1
 			break
 	if c==0:
-		print("ÁÐ±íÀï²»´æÔÚÔªËØ%d" %(number))
+		print("åˆ—è¡¨é‡Œä¸å­˜åœ¨å…ƒç´ %d" %(number))
 	else:
             b = lst.index(number,b+1)
             d.append(b)
             for a in d:
 	        if (len(lst) - 1) / 2 > a:
-		    print("×ó±ßÓÐÒ»¸ö")
+		    print("å·¦è¾¹æœ‰ä¸€ä¸ª")
 		elif (len(lst)-1) / 2 < a:
-	            print("ÓÒ±ßÓÐÒ»¸ö")
+	            print("å³è¾¹æœ‰ä¸€ä¸ª")
 		else:
-		    print("ÕýºÃÔÚÖÐ¼äÓÐÒ»¸ö")
+		    print("æ­£å¥½åœ¨ä¸­é—´æœ‰ä¸€ä¸ª")
 
-#3.¹ýÂË1-100ÖÐµÄËØÊý
+3.
+
 
 import math
 def fil(n):
@@ -58,8 +57,7 @@ def fil(n):
 
 print(list(filter(fil,range(1,101))))
 
-#4.±àÐ´Ò»¸öÄ£¿é£¬
-#  ÒªÇóÀïÃæÓÐ±äÁ¿xºÍy£¬Á½ÊýÏà¼Óadd(x, y)£¬Á½ÊýÏà¼õsub(x, y)£¬Á½ÊýÏà³Ëmul(x, y)£¬Á½ÊýÏà³ýdiv(x, y)ÕâËÄ¸ö·½·¨µÄÊµÏÖ
+4.
 
 import demo
 add(x,y)
@@ -67,7 +65,7 @@ sub(x,y)
 mul(x,y)
 div(x,y)
 
-#5.ÊäÈë²ÎÊýÊÇÒ»¸öÕûÊýÁÐ±í£¬ÇëÕÒ³ö¸ÃÁÐ±íÖÐ×îÐ¡µÄÕûÊý²¢·µ»Ø
+5.
 
 def min5(lst):
     n = sorted(set(lst))
